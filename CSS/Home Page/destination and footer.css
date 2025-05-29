@@ -1,0 +1,144 @@
+.popular-destination {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top : 100px;
+    padding: 40px 0;
+    text-align: center;
+    align-items: center;
+    font-family : 'Montserrat', sans-serif;
+    background: var(--light-color);
+}
+
+.pop-title {
+    color: var(--primary-color);
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(10px, 5vw, 30px);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.pop-title h2{
+    font-weight: 850;
+}
+
+.pop-explain {
+    color: var(--dark-color);
+    font-size: clamp(10px, 5vw, 20px);
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+.destination {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width : 100%;
+    gap : 80px;
+}
+
+.destination-1,
+.destination-2,
+.destination-3 {
+    background: var(--light-color);
+    border-radius: 12px;
+    box-shadow: 0px 2px 8px rgba(0,0,0,0.08);
+    width: 390px; 
+    align-items: center;
+    overflow: hidden;
+}
+
+.destination-1 img,
+.destination-2 img,
+.destination-3 img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    
+}
+
+.destination-1 h3,
+.destination-2 h3,
+.destination-3 h3 {
+    padding-top: 20px;
+    text-align: center;
+    color: var(--dark-color);
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.destination-1 p,
+.destination-2 p,
+.destination-3 p {
+    padding: 20px;
+    text-align: center;
+    color: var(--dark-color);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+    .destination-1 img,
+    .destination-2 img,
+    .destination-3 img {
+        height: 50vw; 
+        max-height: 300px; 
+    }
+
+    .pop-explain{
+        text-align: left;
+        margin-left: 20px;
+    }
+
+    .destination {
+        gap: 40px;
+        width: 70vw;
+    }
+}
+
+.footer {
+    width: 100%;
+    min-height: 200px;
+    background: var(--primary-color);
+    color: var(--light-color);
+    text-align: center;
+    padding: 24px 0;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap : 20px;
+}
+
+.footer p{
+    margin-top : 40px;
+}
+
+.footer-links {
+    flex-direction: row;
+    display: flex;
+    gap : 30px;
+    flex-wrap : wrap;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-links a {
+    color: var(--light-color);
+    text-decoration: none;
+    font-size: 20px;
+    margin: 5px 0;
+}
+
+.github-icon {
+    width: 40px;
+    margin-right: 8px;
+    vertical-align: middle;
+}
